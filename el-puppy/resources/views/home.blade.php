@@ -31,10 +31,7 @@
                             <a href="/">Home</a>
                         </li>
                         <li>
-                            <a href="service">Service</a>
-                        </li>
-                        <li>
-                            <a href="#tutors">Tutors</a>
+                            <a href="#service">Service</a>
                         </li>
                         <li>
                             <a href="#partners">Partners</a>

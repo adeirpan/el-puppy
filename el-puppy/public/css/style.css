@@ -1,7 +1,10 @@
 /*============= gambar landing page============== */
 .banner {
-    background: url("img/cover.png")
-      no-repeat center center;
+    /* background-image: url('{{asset('./img/Site/cover.png')}}') */
+    /* background: url("{asset('./img/Site/cover.png')}") */
+    /* background: url("./img/Site/cover.png"), */
+     background-image: url("./cover.png");
+     /* no-repeat center center; http://127.0.0.1:8000/img/Site/cover.png */
     background-size: cover;
     background-position: right;
     padding-top: 16%;
@@ -112,12 +115,12 @@ p{
     color: #fff;
     background-color: #5544A8;
   }
-  
+
   .lingkaran i {
     position: relative;
     top: 30px;
   }
-  
+
 /*============= Team Style ============== */
 .team-section .single-team {
   padding: 30px;
@@ -254,9 +257,9 @@ p{
   padding: 18px 40px;
   font-size: 18px;
   border-color: #5544A8;
-  background-color: #FFDB24; 
-  border-radius: 8px ; 
-  color: #5544A8; 
+  background-color: #FFDB24;
+  border-radius: 8px ;
+  color: #5544A8;
   cursor: pointer;
   z-index: 5;
   transition: all 0.4s ease-in-out;
