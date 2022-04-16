@@ -93,7 +93,7 @@
                 <div class="card-body">
                     <h5 class="card-title">drh.Alana Liora</h5>
                     <p class="card-text">Senin-Rabu-Jumat<br>08.00-12.00 & 16.00-20.00<br></p>
-                    <a href="#" class="btn btn-primary">Booking</a>
+
                 </div>
             </div>
 
@@ -102,7 +102,7 @@
                 <div class="card-body">
                     <h5 class="card-title">drh.Elvina Askana</h5>
                     <p class="card-text">Senin-Kamis-Jumat<br>10.00-14.00 & 16.00-20.00<br></p>
-                    <a href="#" class="btn btn-primary">Booking</a>
+
                 </div>
             </div>
 
@@ -111,7 +111,7 @@
                 <div class="card-body">
                     <h5 class="card-title">drh.Calista Zalfa</h5>
                     <p class="card-text">Selasa-Kamis-Jumat<br>10.00-14.00 & 16.00-20.00<br></p>
-                    <a href="#" class="btn btn-primary">Booking</a>
+
                 </div>
             </div>
 
@@ -120,13 +120,50 @@
                 <div class="card-body">
                     <h5 class="card-title">drh.Helia Chessy</h5>
                     <p class="card-text">Rabu-Kamis-Sabtu<br>08.00-12.00 & 14.00-18.00</p>
-                    <a href="#" class="btn btn-primary">Booking</a>
+
                 </div>
             </div>
 
         </div>
 
     </div>
+        <br>
+        <br>
+        <div class="col-md-3">
+            <h1 style="margin-bottom: 40px;">Service</h1>
+            <form class="myForm" action="/auth" method="GET">
+                <p>Id
+                    <span><input type="text" id="kode" name="kode" style="margin-left: 180px;"></span></p>
+                <p>Nama
+                    <span><input type="nama" id="nama" name="nama" style="margin-left: 180px;"></span></p>
+                <p>Alamat
+                    <textarea
+                        type="deskripsi"
+                        id="deskripsi"
+                        name="deskripsi"
+                        style="margin-left: 180px;"
+                        cols="40"
+                        rows="5"></textarea>
+                </p>
+                <p>Nomor Telepon
+                    <span><input type="nama" id="nama" name="nama" style="margin-left: 180px;"></span></p>
+                <p>Jenis perawatan
+                    <span><input type="nama" id="nama" name="nama" style="margin-left: 180px;"></span></p>
+
+                <p>Jam Service
+                    <span><input type="jumlah" id="jumlah" name="jumlah" style="margin-left: 180px;"></span></p>
+                <p>Catatan
+                    <textarea
+                        type="deskripsi"
+                        id="deskripsi"
+                        name="deskripsi"
+                        style="margin-left: 180px;"
+                        cols="40"
+                        rows="5"></textarea>
+                </p>
+            </form>
+            <button type="submit" class="main-btn" onclick="location.href='/index' ">Book</button>
+        </div>
     <!--End Card-->
 
     <!--Header Keunggulan-->

@@ -20,34 +20,53 @@
                     <div class="col-sm-6 text-black">
                         <div class="px-5 ms-xl-4">
                             <i class="fas fa-crow fa-2x me-3 pt-5 mt-xl-4" style="color: #709085"></i>
-                            <span class="h1 fw-bold mb-0">Elpuppy</span>
+                            <div class="logo"><img src="{!! asset('./img/Site/log.png') !!}" alt="" style="width: 200px; height: 80px;  "/></div>
                         </div>
+
+                        @if(session()->has('success'))
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                {{ session('success') }}
+                                ,<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+                            </div>
+                        @endif
+
+                        @if(session()->has('loginError'))
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                {{ session('loginError') }}
+                                ,<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+                            </div>
+                        @endif
 
                         <div
                             class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
-                            <form style="width: 23rem">
+                            <form style="width: 23rem" action="/login" method="post">
+                                @csrf
                                 <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px">Log in</h3>
                                 <div class="form-outline mb-4">
-                                    <input type="email" id="form2Example18" class="form-control form-control-lg"/>
-                                    <label class="form-label" for="form2Example18">Email address</label>
+                                    <input type="email" id="email" name="email" for="email" class="form-control form-control-lg"/>
+                                    <label class="form-label" autofocus required>Email address</label>
                                 </div>
 
                                 <div class="form-outline mb-4">
                                     <input
                                         type="password"
-                                        id="form2Example28"
+                                        id="password"
+                                        name="password"
+                                        for = "password"
                                         class="form-control form-control-lg"/>
-                                    <label class="form-label" for="form2Example28">Password</label>
+                                    <label class="form-label" autofocus required >Password</label>
                                 </div>
 
                                 <div class="pt-1 mb-4">
-                                    <button type="button" class="main-btn">Login</button>
+                                    <button {{--type="button"--}} type="submit" class="main-btn">Login</button>
                                 </div>
 
                                 <p class="small text-muted">
                                     Don't have an account?
                                     <a href="/register" class="link-info">
-                                        <u>Register here</u>
+                                        <u>Register Now!!</u>
                                     </a>
                                 </p>
                             </form>

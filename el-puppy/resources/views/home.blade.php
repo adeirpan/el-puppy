@@ -20,11 +20,11 @@
     </head>
 
     <body>
-
+        <h1 style="font-size: 20px; font-family: poppins; text-align :center;" id="jam"></h1>
         <!-- navbar -->
         <nav>
             <div class="wrapper">
-                <div class="logo"><img src="{!! asset('./img/Site/logo.png') !!}" alt="" style="width: 200px; height: 100px"/></div>
+                <div class="logo"><img src="{!! asset('./img/Site/log.png') !!}" alt="" style="width: 180px; height: 70px; position:absolute; "/></div>
                 <div class="menu">
                     <ul>
                         <li>
@@ -34,7 +34,10 @@
                             <a href="#service">Service</a>
                         </li>
                         <li>
-                            <a href="#partners">Partners</a>
+                            <a href="#partners">Staff</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Product</a>
                         </li>
                         <li>
                             <a href="#contact">Contact</a>
@@ -239,8 +242,6 @@
 
                 <div class="contact-form-wrapper" ">
                     <form
-                        action="assets/php/contact.php"
-                        method="POST"
                         id="contact-form"
                         class="contact-form">
                         <div class="row">
@@ -291,7 +292,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="submit-btn text-center mb-41">
-                                    <button class="main-btn btn-hover" type="submit">Send Message</button>
+                                    <button class="main-btn btn-hover" type="submit" onclick="runPopup()">Send Message</button>
                                 </div>
                             </div>
                         </div>
@@ -302,7 +303,51 @@
 
         </section>
         <!-- ========================= contact-section end ========================= -->
+        <script>
+            function runPopup(){
+                if(window.confirm("Yakin Akan Mengirim Pesan"))
+                {
+                window.alert("Pesan telah dikirim, Terima kasih atas saran anda");
+                }
+                else
+                {
+                window.alert("Pesan batal dikirim");
+                }
+            };
 
+         </script>
+
+        <script>
+            function showTime(){
+                var date = new Date();
+                var h = date.getHours(); // 0 - 23
+                var m = date.getMinutes(); // 0 - 59
+                var s = date.getSeconds(); // 0 - 59
+                var session = "AM";
+
+                if(h == 0){
+                    h = 12;
+                }
+
+                if(h > 12){
+                    h = h - 12;
+                    session = "PM";
+                }
+
+                h = (h < 10) ? "0" + h : h;
+                m = (m < 10) ? "0" + m : m;
+                s = (s < 10) ? "0" + s : s;
+
+                var time = h + ":" + m + ":" + s + " " + session;
+                document.getElementById("MyClockDisplay").innerText = time;
+                document.getElementById("MyClockDisplay").textContent = time;
+
+                setTimeout(showTime, 1000);
+
+            }
+
+            showTime();
+        </script>
         <!-- Footer-->
         <footer >
             <div class="container">

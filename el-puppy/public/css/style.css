@@ -277,3 +277,12 @@ p{
   background-color: #4D77FF;
 }
 /*============= Footer Style End ============== */
+.clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #17D4FE;
+  font-size: 60px;
+  letter-spacing: 7px;
+}
