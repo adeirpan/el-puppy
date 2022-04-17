@@ -20,37 +20,51 @@
     </head>
 
     <body>
+
         <h1 style="font-size: 20px; font-family: poppins; text-align :left;" id="jam"></h1>
         <!-- navbar -->
         <nav>
             <div class="wrapper">
-                <div class="logo"><img src="{!! asset('./img/Site/log.png') !!}" alt="" style="width: 180px; height: 70px; position:absolute; "/></div>
-                    <div class="menu">
-                        <ul>
-                            <li>
-                                <a href="/">Home</a>
-                            </li>
-                            <li>
-                                <a href="service">Service</a>
-                            </li>
-                            <li>
-                                <a href="#tutors">Tutors</a>
-                            </li>
-                            <li>
-                                <a href="#partners">Partners</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact</a>
-                            </li>
-                            <li>
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Welcome, User
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown"  >
-                                    <li><a class="dropdown-item" style="margin-left: 25px;" href="#">Log Out</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                <div class="logo"><img
+                    src="{!! asset('./img/Site/log.png') !!}"
+                    alt=""
+                    style="width: 180px; height: 70px; position:absolute; "/></div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#dashboard">Home</a>
+                        </li>
+                        <li>
+                            <a href="#service">Service</a>
+                        </li>
+                        <li>
+                            <a href="#product">Product</a>
+                        </li>
+                        <li>
+                            <a href="#team">Staff</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarScrollingDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Welcome,
+                                {{Session::get('email')}}
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+
+                                <li>
+                                    <a class="dropdown-item" style="margin-left: 25px;" href="/logout">Log Out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -115,6 +129,7 @@
         <!-- ========================= Service-section end ========================= -->
 
         <hr>
+        <section id="product">
         <div class="container-fluid layanan pt-5 pb-5">
             <div class="container text-center">
                 <h3 class="display-3" id="produk">Recommend Product</h3>
@@ -138,6 +153,7 @@
                 </div>
             </div>
         </div>
+        </section>
         <br>
         <br>
         <hr>
@@ -147,9 +163,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-6">
                         <div class="section-title text-center mb-60">
-                            <h1>Meet The Staff
-                                <img src="" alt="" class="title-shape">
-                            </h1>
+                            <h3 class="display-3" id="produk">Meet The Staff</h3>
                             <p>Semua staff kami sudah sangat berpengalaman dan memiliki kualitas pelayanan
                                 yang baik .</p>
                         </div>
@@ -160,7 +174,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-10">
                         <div class="single-team">
                             <div class="image">
-                                <img src="{!! asset('./img/Site/yudha.jpeg') !!}" alt="yudha" style="object-fit: cover;">
+                                <img
+                                    src="{!! asset('./img/Site/yudha.jpeg') !!}"
+                                    alt="yudha"
+                                    style="object-fit: cover;">
                             </div>
                             <div class="content">
                                 <h4>Yudha Yasa AB</h4>
@@ -171,7 +188,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-10">
                         <div class="single-team">
                             <div class="image">
-                                <img src="{!! asset('./img/Site/Hikami.jpeg') !!}" alt="Hikami" style="object-fit: cover;">
+                                <img
+                                    src="{!! asset('./img/Site/Hikami.jpeg') !!}"
+                                    alt="Hikami"
+                                    style="object-fit: cover;">
                             </div>
                             <div class="content">
                                 <h4>M. Hikami Dzulfikar</h4>
@@ -182,7 +202,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-10">
                         <div class="single-team">
                             <div class="image">
-                                <img src="{!! asset('./img/Site/ade.jpeg') !!}" alt="Ade Irpan" style="object-fit: cover;">
+                                <img
+                                    src="{!! asset('./img/Site/ade.jpeg') !!}"
+                                    alt="Ade Irpan"
+                                    style="object-fit: cover;">
                             </div>
                             <div class="content">
                                 <h4>Ade Irpan Hidayat</h4>
@@ -193,7 +216,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-10">
                         <div class="single-team">
                             <div class="image">
-                                <img src="{!! asset('./img/Site/Rezky.jpeg') !!}" alt="Rezki" style="object-fit: cover;">
+                                <img
+                                    src="{!! asset('./img/Site/Rezky.jpeg') !!}"
+                                    alt="Rezki"
+                                    style="object-fit: cover;">
                             </div>
                             <div class="content">
                                 <h4>Rezki Fauzan Arifin</h4>
@@ -204,7 +230,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-10">
                         <div class="single-team">
                             <div class="image">
-                                <img src="{!! asset('./img/Site/randy.jpg') !!}" alt="Randy" style="object-fit: cover;">
+                                <img
+                                    src="{!! asset('./img/Site/randy.jpg') !!}"
+                                    alt="Randy"
+                                    style="object-fit: cover;">
                             </div>
                             <div class="content">
                                 <h4>Randy Priatma F</h4>
@@ -227,19 +256,14 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-xl-6">
                         <div class="section-title text-center" style="margin-top: 50px;">
-                            <h1>Get In Touch Now
-                                <img src="assets/img/vectors/title-shape.svg" alt="" class="title-shape center">
-                            </h1>
-                            <p>Sonumy eirmod tempor invidunt ut labore et dolore magna aliqum erat, sed diam
-                                voluptua .</p>
+                            <h3 class="display-3" id="produk">Get Touch</h3>
+                            <p>Silahkan kontak kami melalui surel dibawah ini jikalau ada yang ingin kamu sampaikan kepada kami.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-form-wrapper" ">
-                    <form
-                        id="contact-form"
-                        class="contact-form">
+                    <form id="contact-form" class="contact-form">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="single-form">
@@ -300,39 +324,42 @@
         </section>
         <!-- ========================= contact-section end ========================= -->
         <script>
-            function runPopup(){
-                if(window.confirm("Yakin Akan Mengirim Pesan"))
-                {
-                window.alert("Pesan telah dikirim, Terima kasih atas saran anda");
-                }
-                else
-                {
-                window.alert("Pesan batal dikirim");
+            function runPopup() {
+                if (window.confirm("Yakin Akan Mengirim Pesan")) {
+                    window.alert("Pesan telah dikirim, Terima kasih atas saran anda");
+                } else {
+                    window.alert("Pesan batal dikirim");
                 }
             };
-
-         </script>
+        </script>
 
         <script type="text/javascript">
-            window.onload = function() { jam(); }
+            window.onload = function () {
+                jam();
+            }
 
             function jam() {
-             var e = document.getElementById('jam'),
-             d = new Date(), h, m, s;
-             h = d.getHours();
-             m = set(d.getMinutes());
-             s = set(d.getSeconds());
+                var e = document.getElementById('jam'),
+                    d = new Date(),
+                    h,
+                    m,
+                    s;
+                h = d.getHours();
+                m = set(d.getMinutes());
+                s = set(d.getSeconds());
 
-             e.innerHTML = h +':'+ m +':'+ s;
+                e.innerHTML = h + ':' + m + ':' + s;
 
-             setTimeout('jam()', 1000);
+                setTimeout('jam()', 1000);
             }
 
             function set(e) {
-             e = e < 10 ? '0'+ e : e;
-             return e;
+                e = e < 10
+                    ? '0' + e
+                    : e;
+                return e;
             }
-           </script>
+        </script>
         <!-- Footer-->
         <footer >
             <div class="container">

@@ -11,25 +11,23 @@
             rel="stylesheet"
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
             crossorigin="anonymous">
-        <link href="./service.css" rel="stylesheet"/>
+
+        <link href="{!! asset('css/service.css') !!}" rel="stylesheet"/>
+
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
 
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/b5b2ac5d79.js" crossorigin="anonymous"></script>
 
-        <title>Service</title>
+        <title>Clinic</title>
     </head>
     <body>
 
         <!-- Navbar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <img
-                    id="logo"
-                    src="{!! asset('./img/Site/logo.png') !!}"
-                    width="100"
-                    height="100">
+                <img id="logo" src="{!! asset('./img/Site/logo.png') !!}" width="100" height="100">
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -83,82 +81,52 @@
 
         <!--Card-->
         <div class="container">
-            <h2 class="text-center">Selamat Datang Di Jasa Perawatan Kami</style>
+            <h2 class="text-center">Selamat Datang Di Klinik Kami</style>
         </h2>
-        <p class="text-center">Tim Groomer kami siap melayani peliharaan anda</p>
-        <div class="d-flex justify-content-around mt-3 ">
-            <img src="{!! asset('./img/Site/Promo.jpg') !!}" style="object-fit: cover;"/>
-        </div>
-        <h3 class="class">Jenis Perawatan</h3>
-        <br>
-        <br>
+        <p class="text-center">Tim Doctor kami siap melayani peliharaan anda</p>
+        <h3 class="class">Jadwal Dokter
+        </h3>
+
         <div class="d-flex justify-content-around mt-3">
             <div class="card" style="width: 16rem;">
-                <img
-                    src="{!! asset('./img/Site/nail_clipping.jpg') !!}"
-                    width="160"
-                    height="160"
-                    class="card-img-top"
-                    alt="...">
+                <img src="{!! asset('./img/Site/dokter_hewan.jpg') !!}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Nail Clipping</h5>
-                    <p class="card-text">Proses grooming / perawatan memotong kuku anjing / kucing
-                        ini untuk mengurangi resiko melukai owner ataupun groomer saat grooming atau
-                        saat dimandikan.</p>
+                    <h5 class="card-title">drh.Alana Liora</h5>
+                    <p class="card-text">Senin-Rabu-Jumat<br>08.00-12.00 & 16.00-20.00<br></p>
 
                 </div>
             </div>
 
             <div class="card" style="width: 16rem;">
-                <img
-                    src="{!! asset('./img/Site/ear_cleaning.jpg') !!}"
-                    width="160"
-                    height="160"
-                    class="card-img-top"
-                    alt="...">
+                <img src="{!! asset('./img/Site/dokter_hewan2.jpg') !!}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Ear Cleaning</h5>
-                    <p class="card-text">Proses grooming membersihkan telinga ini untuk mencegah
-                        anabul Kamu dari resiko penyakit telinga.</p>
+                    <h5 class="card-title">drh.Elvina Askana</h5>
+                    <p class="card-text">Senin-Kamis-Jumat<br>10.00-14.00 & 16.00-20.00<br></p>
 
                 </div>
             </div>
 
             <div class="card" style="width: 16rem;">
-                <img
-                    src="{!! asset('./img/Site/bathing.jpg') !!}"
-                    width="160"
-                    height="160"
-                    class="card-img-top"
-                    alt="...">
+                <img src="{!! asset('./img/Site/dokter_hewan3.jpg') !!}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Bathing</h5>
-                    <p class="card-text">Pada proses grooming ini, seluruh badan anabul Kamu akan
-                        dibasahi dengan air hangat secara merata dengan hati-hati supaya air tidak masuk
-                        ke dalam telinga. Khusus grooming memandikan KUCING, menghindari area muka dan
-                        kepala<br></p>
+                    <h5 class="card-title">drh.Calista Zalfa</h5>
+                    <p class="card-text">Selasa-Kamis-Jumat<br>10.00-14.00 & 16.00-20.00<br></p>
 
                 </div>
             </div>
 
             <div class="card" style="width: 16rem;">
-                <img
-                    src="{!! asset('./img/Site/fur_brushing.jpg') !!}"
-                    width="160"
-                    height="160"
-                    class="card-img-top"
-                    alt="...">
+                <img src="{!! asset('./img/Site/dokter_hewan4.jpg') !!}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Fur Brushing</h5>
-                    <p class="card-text">Proses grooming ini merupakan penyisiran yang dilakukan
-                        pada seluruh permukaan bulu anabul. Hal ini dilakukan untuk menghindari bulu
-                        agar tidak gimbal ataupun lembab yang menyebabkan tumbuhnya jamur pada badan
-                        kucing Anda.</p>
+                    <h5 class="card-title">drh.Helia Chessy</h5>
+                    <p class="card-text">Rabu-Kamis-Sabtu<br>08.00-12.00 & 14.00-18.00</p>
 
                 </div>
             </div>
 
         </div>
+
+    </div>
         <br>
         <br>
         <div class="col-md-3">
@@ -179,16 +147,9 @@
                 </p>
                 <p>Nomor Telepon
                     <span><input type="nama" id="nama" name="nama" style="margin-left: 180px;"></span></p>
-                <p>Jenis Perawatan<select
-                    class="form-select"
-                    aria-label="Default select example"
-                    style="margin-left: 180px;">
-                        <option selected="selected">pilih type</option>
-                        <option value="1">Cukur Bulu</option>
-                        <option value="2">Pengembang Biakan</option>
-                        <option value="3">Cari Jodoh</option>
-                    </select>
-                </p>
+                <p>Jenis perawatan
+                    <span><input type="nama" id="nama" name="nama" style="margin-left: 180px;"></span></p>
+
                 <p>Jam Service
                     <span><input type="jumlah" id="jumlah" name="jumlah" style="margin-left: 180px;"></span></p>
                 <p>Catatan
@@ -201,66 +162,58 @@
                         rows="5"></textarea>
                 </p>
             </form>
-            <button type="submit" class="main-btn" onclick="location.href='/index' ">Book</button>
+            <button type="submit" class="main-btn" onclick="location.href='/klinik/create' ">Book</button>
         </div>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
-    </body>
+    <!--End Card-->
 
+    <!--Header Keunggulan-->
+    <div class="container">
+        <h2 class="text-center">Keunggulan Dari Doctor Kami</style>
+    </h2>
 </div>
-<!--End Card-->
-
-<!--Header Keunggulan-->
-<div class="container">
-    <h2 class="text-center">Keunggulan Dari Perawatan Kami</style>
-</h2>
-</div>
-<!--End Header Keungulan-->
+<!--End Header Keunggulan-->
 
 <!--Keunggulan-->
 <div class="container mb-2">
-<div class="card-group iklan">
-    <div class="card text-white  mb-3 iklan">
-        <i
-            class="fa-solid fa-shield-halved fa-5x d-flex justify-content-center text-light mb-2 mt-2"></i>
-        <div class="card-body">
-            <h5 class="card-title text-center">Produk Terjamin</h5>
-            <p class="card-text text-center ">Setiap produk Grooming yang kami gunakan,
-                mulai dari ear cleaner sampai pemberian parfum, menggunakan produk-produk
-                Premium yang 100% aman untuk anabul Kamu.</p>
+    <div class="card-group iklan">
+        <div class="card text-white  mb-3 iklan">
+            <i
+                class="fa-solid fa-graduation-cap fa-5x d-flex justify-content-center text-light mb-2 mt-2"></i>
+            <div class="card-body">
+                <h5 class="card-title text-center">Berkualitas</h5>
+                <p class="card-text text-center ">Setiap dokter yang berada dibawah naungan
+                    El-Puppy memiliki pengalaman minimal 5 tahun dalam dunia medis hewan dan
+                    memiliki sertifikat yang bertaraf nasional
+                </p>
+            </div>
+        </div>
+        <div class="card text-white  mb-3 iklan">
+            <i
+                class="fa-solid fa-user-tie fa-5x d-flex justify-content-center text-light mb-2 mt-2"></i>
+            <div class="card-body">
+                <h5 class="card-title text-center">Professional</h5>
+                <p class="card-text text-center">Semua Groomer di El-Puppy mempunyai Pengalaman
+                    & Standar Prosedur (SOP) terbaik dalam melayani Grooming anabul kesayangan Kamu.</p>
+            </div>
+        </div>
+        <div class="card text-white  mb-3 iklan">
+            <i
+                class="fa-solid fa-face-grin fa-5x d-flex justify-content-center text-light mb-2 mt-2"></i>
+            <div class="card-body">
+                <h5 class="card-title text-center">Ramah</h5>
+                <p class="card-text text-center">Setiap dokter pada tim kami selalu senantiasa
+                    mendengarkan dengan baik keluhan dari setiap customer El-Puppy</p>
+            </div>
         </div>
     </div>
-    <div class="card text-white mb-3 iklan">
-        <i
-            class="fa-solid fa-user-tie fa-5x d-flex justify-content-center text-light mb-2 mt-2"></i>
-        <div class="card-body">
-            <h5 class="card-title text-center ">Professional</h5>
-            <p class="card-text text-center">Semua Groomer di El-Puppy mempunyai Pengalaman
-                & Standar Prosedur (SOP) terbaik dalam melayani Grooming anabul kesayangan Kamu.</p>
-        </div>
-    </div>
-    <div class="card text-white  mb-3 iklan">
-        <i
-            class="fa-solid fa-thumbs-up fa-5x d-flex justify-content-center text-light mb-2 mt-2"></i>
-        <div class="card-body">
-            <h5 class="card-title text-center">Mudah</h5>
-            <p class="card-text text-center">Selain layanan Grooming di outlet El-Puppy,
-                Groomer Kami juga siap Kamu booking kapanpun, demi melayani Kamu dan anabul
-                kesayangan di rumah Kamu.</p>
-        </div>
-    </div>
-</div>
 </div>
 <!--End Keunggulan-->
 
 <!--Footer-->
 <footer class=" bg-primary">
-<div class="container">
-    <p class="m-0 text-center text-white" foot="foot" ">Copyright &copy; El Puppy 2022</p>
-</div>
+    <div class="container">
+        <p class="m-0 text-center text-white foot">Copyright &copy; El Puppy 2022</p>
+    </div>
 </footer>
 <!--End Footer-->
 
@@ -268,9 +221,9 @@
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-crossorigin="anonymous"></script>
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
 <!-- Option 2: Separate Popper and Bootstrap JS -->
 <!-- <script

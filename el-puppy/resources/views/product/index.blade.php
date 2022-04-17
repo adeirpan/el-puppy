@@ -57,7 +57,7 @@
 
         <div class="product-table-list">
             <span class="float-left">{{ session('msg') }}</span>
-            <a href="/product/create" class="btn btn-secondary float-right">Tambah</a><br /><br />
+            <a href="/product/create" class="main-btn">Tambah</a><br /><br />
             <table class="table table-bordered table-striped">
                 <tr>
                     <th>Nama</th>

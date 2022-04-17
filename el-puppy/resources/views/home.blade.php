@@ -34,10 +34,10 @@
                             <a href="#service">Service</a>
                         </li>
                         <li>
-                            <a href="#partners">Staff</a>
+                            <a href="#product">Product</a>
                         </li>
                         <li>
-                            <a href="#contact">Product</a>
+                            <a href="#team">Staff</a>
                         </li>
                         <li>
                             <a href="#contact">Contact</a>
@@ -119,6 +119,7 @@
         <!-- ========================= Service-section end ========================= -->
 
         <hr>
+        <section id="product">
         <div class="container-fluid layanan pt-5 pb-5">
             <div class="container text-center">
                 <h3 class="display-3" id="produk">Recommend Product</h3>
@@ -142,6 +143,7 @@
                 </div>
             </div>
         </div>
+        </section>
         <br>
         <br>
         <hr>
@@ -151,9 +153,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-6">
                         <div class="section-title text-center mb-60">
-                            <h1>Meet The Staff
-                                <img src="" alt="" class="title-shape">
-                            </h1>
+                            <h3 class="display-3" id="produk">Meet The Staff</h3>
                             <p>Semua staff kami sudah sangat berpengalaman dan memiliki kualitas pelayanan
                                 yang baik .</p>
                         </div>
@@ -231,11 +231,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-xl-6">
                         <div class="section-title text-center" style="margin-top: 50px;">
-                            <h1>Get In Touch Now
-                                <img src="assets/img/vectors/title-shape.svg" alt="" class="title-shape center">
-                            </h1>
-                            <p>Sonumy eirmod tempor invidunt ut labore et dolore magna aliqum erat, sed diam
-                                voluptua .</p>
+                            <h3 class="display-3" id="produk">Get Touch</h3>
+                            <p>Silahkan kontak kami melalui surel dibawah ini jikalau ada yang ingin kamu sampaikan kepada kami.</p>
                         </div>
                     </div>
                 </div>
@@ -305,7 +302,13 @@
         <!-- ========================= contact-section end ========================= -->
         <script>
             function runPopup(){
-                if(window.confirm("Yakin Akan Mengirim Pesan"))
+                if
+
+        <footer class=" bg-primary">
+            <div class="container">
+                <p class="m-0 text-center text-white foot">Copyright &copy; El Puppy 2022</p>
+            </div>
+        </footer>
                 {
                 window.alert("Pesan telah dikirim, Terima kasih atas saran anda");
                 }

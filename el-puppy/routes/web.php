@@ -6,6 +6,8 @@ use App\Http\Controllers\SiteController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\KlinikController;
+use App\Http\Controllers\ServiceController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,13 +19,13 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/klinik', function () {
-    return view('klinik');
-});
+// Route::get('/klinik', function () {
+//     return view('klinik');
+// });
 
-Route::get('/service', function () {
-    return view('service');
-});
+// Route::get('/service', function () {
+//     return view('service');
+// });
 
 // Route::get('/login', function () {
 //     return view('loginForm');
@@ -36,6 +38,8 @@ Route::get('/service', function () {
 Route::resource('/', SiteController::class);
 
 Route::resource('product', ShopController::class);
+Route::resource('klinik', klinikController::class);
+Route::resource('service', ServiceController::class);
 
 Route::get('/login', [LoginController::class, 'index']);
 Route::post('/login', [LoginController::class, 'authentication']);
@@ -44,3 +48,4 @@ Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
+

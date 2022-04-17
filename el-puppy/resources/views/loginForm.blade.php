@@ -45,18 +45,18 @@
                                 @csrf
                                 <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px">Log in</h3>
                                 <div class="form-outline mb-4">
-                                    <input type="email" id="email" name="email" for="email" class="form-control form-control-lg"/>
                                     <label class="form-label" autofocus required>Email address</label>
+                                    <input type="email" id="email" name="email" for="email" class="form-control form-control-lg"/>
                                 </div>
 
                                 <div class="form-outline mb-4">
+                                    <label class="form-label" autofocus required >Password</label>
                                     <input
                                         type="password"
                                         id="password"
                                         name="password"
                                         for = "password"
                                         class="form-control form-control-lg"/>
-                                    <label class="form-label" autofocus required >Password</label>
                                 </div>
 
                                 <div class="pt-1 mb-4">

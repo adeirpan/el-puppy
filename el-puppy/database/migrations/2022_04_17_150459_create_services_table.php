@@ -13,8 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('Service', function (Blueprint $table) {
-            $table->string('id')->unique();
+        Schema::create('services', function (Blueprint $table) {
+            $table->id();
             $table->string('nama');
             $table->string('alamat');
             $table->string('nomorTelepon');
@@ -32,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('services');
     }
 };

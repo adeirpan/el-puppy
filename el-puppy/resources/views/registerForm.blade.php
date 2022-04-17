@@ -29,18 +29,18 @@
                                 @csrf
                                 <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px">Register</h3>
                                 <div class="form-outline mb-3">
-                                    <input type="text" id="name" name="name" class="form-control form-control-lg @error('name') is-invalid @enderror"/>
                                     <label class="form-label" for="name" >Your Name</label>
+                                    <input type="text" id="name" name="name" class="form-control form-control-lg @error('name') is-invalid @enderror"/>
                                 </div>
 
                                 <div class="form-outline mb-3">
-                                    <input type="email" name="email" id="email" class="form-control form-control-lg"/>
                                     <label class="form-label @error('email') is-invalid @enderror" for="email" >Your Email</label>
+                                    <input type="email" name="email" id="email" class="form-control form-control-lg"/>
                                 </div>
 
                                 <div class="form-outline mb-3">
-                                    <input type="password" name="password" id="password" for= "password" class="form-control form-control-lg @error('password') is-invalid @enderror"/>
                                     <label class="form-label" for="form3Example4cg">Password</label>
+                                    <input type="password" name="password" id="password" for= "password" class="form-control form-control-lg @error('password') is-invalid @enderror"/>
                                 </div>
 
                                 <div class="d-flex justify-content-center mb-2">

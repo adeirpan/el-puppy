@@ -5,8 +5,8 @@
     white-space: nowrap;
     vertical-align: middle;
     user-select: none;
-    padding: 18px 40px;
-    font-size: 18px;
+    padding: 10px 28px;
+    font-size: 16px;
     border-radius: 8px;
     color: #fff;
     cursor: pointer;
@@ -15,32 +15,38 @@
     border: none;
     background: #5544A8;
     overflow: hidden;
-    margin-left: 180px;
-  }
-.iklan{
-  background-color: #5544A8;
+
 }
-  @font-face {
+
+.iklan {
+    background-color: #5544A8;
+}
+.lab {
+
+    color: #2a2a2a;
+
+}
+@font-face {
     font-family: poppins;
-    src: url(font/Poppins-Regular.ttf);
-  }
-
-.foot{
-   background-color: #5544A8;
+    src: url("font/Poppins-Regular.ttf");
 }
- @font-face {
+
+.foot {
+    background-color: #5544A8;
+}
+@font-face {
     font-family: poppins;
-    src: url(font/Poppins-Regular.ttf);
-  }
+    src: url("font/Poppins-Regular.ttf");
+}
 
-body{
-	font-family: poppins;
-	color: #fff;
+body {
+    font-family: poppins;
+    color: #fff;
 
 }
 
-p{
+p {
     font-family: 'poppins';
-	font-size: 16pt;
+    font-size: 16pt;
     color: #2a2a2a;
 }
